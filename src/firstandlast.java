@@ -45,8 +45,8 @@ public class firstandlast {
     }
 
     public static void main(String[] args) {
-     int arr[]={0,1,2,3,3,3,3,5,7};
-        System.out.println(Arrays.toString(explorer(arr,3)));
+     int arr[]={-47,-29,-17,-6,-4,6,22,27,35};
+        System.out.println(Arrays.toString(explorer(arr,-6)));
 
 
     }

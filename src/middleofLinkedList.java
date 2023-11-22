@@ -19,7 +19,7 @@ public class middleofLinkedList {
     void insert(int val) {
         if (size == 0) {
             node n = new node(val);
-            n.next = head;
+            //n.next = head;
             head = n;
             size++;
 
@@ -41,7 +41,7 @@ public class middleofLinkedList {
         }
 
     }
-    node mid(node head)
+    int  mid(node head)
     {
       node slow=head;
       node fast =head;
@@ -50,7 +50,7 @@ public class middleofLinkedList {
           slow=slow.next;
           fast=fast.next.next;
       }
-      return slow;
+      return slow.val;
     }
 
 }
@@ -64,8 +64,8 @@ class main
         x.insert(3);
         x.insert(4);
         x.insert(5);
-        x.display();
-         x.mid(x.head);
+       // x.display();
+        System.out.println(x.mid(x.head));
 
     }
 }
